@@ -153,17 +153,113 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -100%;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     padding: 20px;
     z-index: 1000;
     height: 100vh;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
 }
 
+.mobile__sidebar .mobile__sidebar__top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile__sidebar .mobile__sidebar__top img{
+    width: 80px;
+}
+
+.mobile__sidebar .mobile__sidebar__top .closeMobileSidebar{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.mobile__sidebar .mobile__sidebar__center{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mobile__sidebar .mobile__sidebar__center ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    list-style: none;
+    gap: 20px;
+}
+
+.mobile__sidebar .mobile__sidebar__center ul li a{
+    color: #000000f2;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mobile__sidebar__bottom{
+    margin-top: 20px;
+}
+
+.mobile__sidebar__bottom ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: safe;
+    list-style: none;
+    gap: 20px;
+}
+
+.mobile__sidebar__bottom ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mobile__sidebar__dropdown__menu{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.mobile__sidebar__dropdown__menu.open {
+    opacity: 1;
+    height: auto; 
+}
+
+.technicalDropdownOpen{
+    font-size: 18px !important;
+}
+
+.mobile__sidebar__dropdown__menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.mobile__sidebar__dropdown__menu ul li a{
+    font-weight: 100 !important;
+}
+
+.mobile__sidebar__bottom ul li a{
+    color: #000000f2;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
 /** Mobil Sidebar CSS :: Son **/
+
 /** Responsive Tasarım CSS :: Başlangıç **/
 @media (min-width: 1281px) {
   /** Header CSS::Start **/
@@ -228,7 +324,6 @@
   }
   .openMobileSidebar{
     display: block;
-    font-size: 24px !important;
   }
 
   /** Header CSS::End **/
@@ -254,7 +349,6 @@
   }
   .openMobileSidebar{
     display: block;
-    font-size: 15px !important;
   }
 
   /** Header CSS::End **/

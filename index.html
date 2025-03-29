@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Wiky Watch | Türkiyenin İlk Akıllı Çocuk Telefonu</title>
 </head>
 <body>
     <div class="mobile__sidebar">
         <div class="mobile__sidebar__top">
-            <img src="" alt="">
-            <a href=""><i class="bi bi-x-circle"></i></a>
+            <img src="./assets/images/wiky-logo3.svg" alt="">
+            <a class="closeMobileSidebar"><i class="bi bi-x-circle"></i></a>
         </div>
         <div class="mobile__sidebar__center">
             <ul>
@@ -25,12 +26,26 @@
         </div>
         <div class="mobile__sidebar__bottom">
             <ul>
-                <li><a href="">Teknik Servis</a></li>
+                <li>
+                    <div class="mobile__sidebar__dropdown">
+                        <a href="#">Teknik Servis</a>
+                
+                        <div class="mobile__sidebar__dropdown__menu">
+                            <ul>
+                                <li><a href="#">Teknik Servis Kayıt Formu</a></li>
+                                <li><a href="#">Teknik Servis Durum Sorgulama</a></li>
+                                <li><a href="#">Wiky Watch Sıfırlama Formu</a></li>
+                                <li><a href="#">Servis Ödeme Sorgula</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" class="technicalDropdownOpen"><i class="bi bi-plus-lg"></i></a>                    
+                </li>                
                 <li><a href="">Bilgi Bankası</a></li>
                 <li><a href="">Hakkımızda</a></li>
             </ul>
         </div>
-    </div>
+    </div>    
      <header id="header" class="header">
          <div class="header__top">
             <div class="header__top__left">
@@ -84,8 +99,31 @@
                     <li><a href="">Hakkımızda</a></li>
                 </ul>
             </div>
-            <a class="openMobileSidebar" href=""><i class="bi bi-list"></i></a>
+            <a class="openMobileSidebar"  style="font-size: 36px !important;color:#333" href=""><i class="bi bi-list"></i></a>
          </div>
      </header>
 </body>
+<script>
+ $(document).ready(function() {
+    // Sidebar'ı açma
+    $('.openMobileSidebar').on('click', function(e) {
+        e.preventDefault();
+        $('.mobile__sidebar').css('left', '0');
+    });
+    // Sidebar'ı kapama
+    $('.closeMobileSidebar').on('click', function() {
+        $('.mobile__sidebar').css('left', '-100%');
+    });
+    // Teknik dropdown menüsünü açma ve kapama işlevi
+    $('.technicalDropdownOpen').on('click', function(e) {
+        e.preventDefault();
+        var $dropdownMenu = $(this).prev('.mobile__sidebar__dropdown').find('.mobile__sidebar__dropdown__menu');
+        if ($dropdownMenu.hasClass('open')) {
+            $dropdownMenu.removeClass('open');
+        } else {
+            $dropdownMenu.addClass('open');
+        }
+    });
+});
+</script>
 </html>
