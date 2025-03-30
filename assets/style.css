@@ -257,8 +257,94 @@
     font-size: 14px;
     font-weight: 600;
 }
-
 /** Mobil Sidebar CSS :: Son **/
+/** Product Banner CSS :: Başlangıç **/
+#product__banner {
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 500px;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product__banner .product__banner__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#product__banner .product__banner__main .product__banner__text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: start;
+}
+#product__banner .product__banner__main .product__banner__text .product__banner__button{
+    background-color: #000;
+    color: whitesmoke;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 36px;
+}
+#product__banner .product__banner__main .product__banner__text .product__banner__subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    border: 1px solid #007BFF;
+    padding: 5px;
+    border-radius: 40px;
+    background-color: #007BFF;
+    color:whitesmoke;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#product__banner .product__banner__main .product__banner__text .product__banner__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#product__banner .product__banner__main .product__banner__text .product__banner__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+}
+#product__banner .product__banner__main .product__banner_image img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/** Product Banner CSS :: Son **/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** Responsive Tasarım CSS :: Başlangıç **/
 @media (min-width: 1281px) {
@@ -288,7 +374,6 @@
     display: block;
   }
   /** Header CSS::End **/
-
 }  
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /** Header CSS::Start **/
@@ -302,11 +387,9 @@
     display: block;
   }
   /** Header CSS::End **/
-
 }
 @media (min-width: 481px) and (max-width: 767px) {
   /** Header CSS::Start **/
-
   .header .header__top{
     justify-content: center !important;
   }
@@ -325,7 +408,6 @@
   .openMobileSidebar{
     display: block;
   }
-
   /** Header CSS::End **/
 }
 
@@ -350,7 +432,6 @@
   .openMobileSidebar{
     display: block;
   }
-
   /** Header CSS::End **/
   
 }
