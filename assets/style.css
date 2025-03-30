@@ -1,438 +1,482 @@
 /** Header Top CSS:: Başlangıç **/
-*{
-   padding: 0;
-   margin: 0;
-   font-family: "Open Sans", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: <weight>;
-   font-style: normal;
-   font-variation-settings:"wdth" 100;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
-#header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;  
-    position: relative;
+#header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
 }
-#header .header__top{
-    width: 100%;;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #000;
-    height: 40px;
-    color: whitesmoke;
-    padding: 0 64px;
-    box-sizing: border-box;
+#header .header__top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  height: 40px;
+  color: whitesmoke;
+  padding: 0 64px;
+  box-sizing: border-box;
 }
 #header .header__top .header__top__left {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   gap:10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
-#header .header__top .header__top__left a{
-   color: whitesmoke;
-   text-decoration: none;
-   font-size: 13px;
-}
-#header .header__top .header__top__center span{
+#header .header__top .header__top__left a {
+  color: whitesmoke;
+  text-decoration: none;
   font-size: 13px;
 }
-#header .header__top .header__top__right button{
-    background-color: #dd3333;
-    color: #ffffff;
-    padding: 6px 10px;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+#header .header__top .header__top__center span {
+  font-size: 13px;
 }
-#header .header__menu{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 64px;
-    box-sizing: border-box;
+#header .header__top .header__top__right button {
+  background-color: #dd3333;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#header .header__menu .header__menu__left{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
+#header .header__menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  box-sizing: border-box;
 }
-#header .header__menu .header__menu__left .header__menu__left__logo img{
-   width: 80px;    
+#header .header__menu .header__menu__left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-#header .header__menu .header__menu__left__menu ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+#header .header__menu .header__menu__left .header__menu__left__logo img {
+  width: 80px;
 }
-#header .header__menu .header__menu__left__menu ul li a{
-   color: #0000008c;
-   font-size: 13px;
-   text-decoration: none;
-   padding: 0px 12px;
-   line-height: 52px;
-   font-weight: 600;
+#header .header__menu .header__menu__left__menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
-#header .header__menu .header__menu__left__menu ul li a:hover{
-    color: #000000c5;
- }
-#header .header__menu .header__menu__right{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+#header .header__menu .header__menu__left__menu ul li a {
+  color: #0000008c;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0px 12px;
+  line-height: 52px;
+  font-weight: 600;
 }
-#header .header__menu .header__menu__right ul{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
- }
- #header .header__menu .header__menu__right ul li{
-    position: relative;
+#header .header__menu .header__menu__left__menu ul li a:hover {
+  color: #000000c5;
+}
+#header .header__menu .header__menu__right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+#header .header__menu .header__menu__right ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+#header .header__menu .header__menu__right ul li {
+  position: relative;
 }
 #header .header__menu .header__menu__right ul li .header__menu__dropdown {
-    position: absolute;
-    left: 0px;
-    top: 40px;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    display: block;
-    transition: max-height 1s ease, opacity 1s ease;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  display: block;
+  transition: max-height 1s ease, opacity 1s ease;
 }
 #header .header__menu .header__menu__right ul li:hover .header__menu__dropdown {
-    max-height: 500px; 
-    opacity: 1;
+  max-height: 500px;
+  opacity: 1;
 }
-#header .header__menu .header__menu__right ul li .header__menu__dropdown ul{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    background-color: whitesmoke;
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+#header .header__menu .header__menu__right ul li .header__menu__dropdown ul {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: whitesmoke;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#header .header__menu .header__menu__right ul li .header__menu__dropdown ul li a{
-    color: #0000008c;
-    font-size: 13px;
-    text-decoration: none;
-    padding: 0px 12px !important;
-    line-height: 40px !important;
-    font-weight: 600;
-
+#header
+  .header__menu
+  .header__menu__right
+  ul
+  li
+  .header__menu__dropdown
+  ul
+  li
+  a {
+  color: #0000008c;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0px 12px !important;
+  line-height: 40px !important;
+  font-weight: 600;
 }
-#header .header__menu .header__menu__right ul li .header__menu__dropdown ul li a:hover{
-    color: #000000c5;
+#header
+  .header__menu
+  .header__menu__right
+  ul
+  li
+  .header__menu__dropdown
+  ul
+  li
+  a:hover {
+  color: #000000c5;
 }
-#header .header__menu .header__menu__right ul li a{
-    color: #0000008c;
-    font-size: 13px;
-    text-decoration: none;
-    padding: 0px 12px;
-    line-height: 52px;
-    font-weight: 600;
+#header .header__menu .header__menu__right ul li a {
+  color: #0000008c;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0px 12px;
+  line-height: 52px;
+  font-weight: 600;
 }
-#header .header__menu .header__menu__right ul li a:hover{
-   color: #000000c5;
+#header .header__menu .header__menu__right ul li a:hover {
+  color: #000000c5;
 }
-.openMobileSidebar{
-    display: none;
+.openMobileSidebar {
+  display: none;
 }
 /** Header Top CSS:: Son **/
 /** Mobil Sidebar CSS :: Başlangıç **/
-.mobile__sidebar{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    z-index: 1000;
-    height: 100vh;
-    box-sizing: border-box;
-    transition: left 0.3s ease;
+.mobile__sidebar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1000;
+  height: 100vh;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
 }
 
-.mobile__sidebar .mobile__sidebar__top{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.mobile__sidebar .mobile__sidebar__top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.mobile__sidebar .mobile__sidebar__top img{
-    width: 80px;
+.mobile__sidebar .mobile__sidebar__top img {
+  width: 80px;
 }
 
-.mobile__sidebar .mobile__sidebar__top .closeMobileSidebar{
-    font-size: 22px;
-    cursor: pointer;
+.mobile__sidebar .mobile__sidebar__top .closeMobileSidebar {
+  font-size: 22px;
+  cursor: pointer;
 }
 
-.mobile__sidebar .mobile__sidebar__center{
-    width: 100%;
-    margin-top: 20px;
+.mobile__sidebar .mobile__sidebar__center {
+  width: 100%;
+  margin-top: 20px;
 }
 
-.mobile__sidebar .mobile__sidebar__center ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    list-style: none;
-    gap: 20px;
+.mobile__sidebar .mobile__sidebar__center ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  list-style: none;
+  gap: 20px;
 }
 
-.mobile__sidebar .mobile__sidebar__center ul li a{
-    color: #000000f2;
-    text-decoration: none;
-    line-height: 24px;
-    font-size: 14px;
-    font-weight: 600;
+.mobile__sidebar .mobile__sidebar__center ul li a {
+  color: #000000f2;
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.mobile__sidebar__bottom{
-    margin-top: 20px;
+.mobile__sidebar__bottom {
+  margin-top: 20px;
 }
 
-.mobile__sidebar__bottom ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: safe;
-    list-style: none;
-    gap: 20px;
+.mobile__sidebar__bottom ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: safe;
+  list-style: none;
+  gap: 20px;
 }
 
-.mobile__sidebar__bottom ul li{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
+.mobile__sidebar__bottom ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 }
 
-.mobile__sidebar__dropdown__menu{
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, height 0.3s ease;
+.mobile__sidebar__dropdown__menu {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, height 0.3s ease;
 }
 
 .mobile__sidebar__dropdown__menu.open {
-    opacity: 1;
-    height: auto; 
+  opacity: 1;
+  height: auto;
 }
 
-.technicalDropdownOpen{
-    font-size: 18px !important;
+.technicalDropdownOpen {
+  font-size: 18px !important;
 }
 
-.mobile__sidebar__dropdown__menu ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 12px;
+.mobile__sidebar__dropdown__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
 }
 
-.mobile__sidebar__dropdown__menu ul li a{
-    font-weight: 100 !important;
+.mobile__sidebar__dropdown__menu ul li a {
+  font-weight: 100 !important;
 }
 
-.mobile__sidebar__bottom ul li a{
-    color: #000000f2;
-    text-decoration: none;
-    line-height: 24px;
-    font-size: 14px;
-    font-weight: 600;
+.mobile__sidebar__bottom ul li a {
+  color: #000000f2;
+  text-decoration: none;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 600;
 }
 /** Mobil Sidebar CSS :: Son **/
 /** Product Banner CSS :: Başlangıç **/
 #product__banner {
-    width: 100%;
-    background-color: #f5f5f5;
-    height: 500px;
-    margin-top: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  background-color: #f5f5f5;
+  min-height: 500px;
+  height: 100%;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #product__banner .product__banner__main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 #product__banner .product__banner__main .product__banner__text {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    align-items: start;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: start;
 }
-#product__banner .product__banner__main .product__banner__text .product__banner__button{
-    background-color: #000;
-    color: whitesmoke;
-    padding: 12px;
-    cursor: pointer;
-    margin-top: 20px;
-    border:none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 36px;
+#product__banner
+  .product__banner__main
+  .product__banner__text
+  .product__banner__button {
+  background-color: #000;
+  color: whitesmoke;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 36px;
 }
-#product__banner .product__banner__main .product__banner__text .product__banner__subtitle {
-    font-size: 10px;
-    font-weight: 600;
-    border: 1px solid #007BFF;
-    padding: 5px;
-    border-radius: 40px;
-    background-color: #007BFF;
-    color:whitesmoke;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-#product__banner .product__banner__main .product__banner__text .product__banner__title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 10px;
-    margin-top: 10px;
+#product__banner
+  .product__banner__main
+  .product__banner__text
+  .product__banner__subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  border: 1px solid #007bff;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: #007bff;
+  color: whitesmoke;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#product__banner .product__banner__main .product__banner__text .product__banner__description {
-    font-size: 14px;
-    font-weight: 400;
-    color: #666;
-    line-height: 1.6;
+#product__banner
+  .product__banner__main
+  .product__banner__text
+  .product__banner__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#product__banner
+  .product__banner__main
+  .product__banner__text
+  .product__banner__description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.6;
 }
 #product__banner .product__banner__main .product__banner_image img {
-    width: 100%;
-    max-width: 400px;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 /** Product Banner CSS :: Son **/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /** Responsive Tasarım CSS :: Başlangıç **/
 @media (min-width: 1281px) {
   /** Header CSS::Start **/
   /** Header CSS::End **/
-
-}  
+}
 @media (min-width: 1025px) and (max-width: 1280px) {
   /** Header CSS::Start **/
-  .header .header__menu .header__menu__right{
+  .header .header__menu .header__menu__right {
     display: none !important;
   }
-  .openMobileSidebar{
+  .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   /** Header CSS::Start **/
-  .header .header__menu .header__menu__left .header__menu__left__menu{
+  .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
-  .header .header__menu .header__menu__right{
+  .header .header__menu .header__menu__right {
     display: none !important;
   }
-  .openMobileSidebar{
+  .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
-}  
+}
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /** Header CSS::Start **/
-  .header .header__menu .header__menu__left .header__menu__left__menu{
+  .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
-  .header .header__menu .header__menu__right{
+  .header .header__menu .header__menu__right {
     display: none !important;
   }
-  .openMobileSidebar{
+  .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
 }
 @media (min-width: 481px) and (max-width: 767px) {
   /** Header CSS::Start **/
-  .header .header__top{
+  .header .header__top {
     justify-content: center !important;
   }
-  .header .header__top .header__top__center{
+  .header .header__top .header__top__center {
     display: none;
   }
-  .header .header__top .header__top__right{
+  .header .header__top .header__top__right {
     display: none;
   }
-  .header .header__menu .header__menu__left .header__menu__left__menu{
+  .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
-  .header .header__menu .header__menu__right{
+  .header .header__menu .header__menu__right {
     display: none !important;
   }
-  .openMobileSidebar{
+  .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
+  /** Product Banner CSS :: Start **/
+  #product__banner .product__banner__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #product__banner .product__banner__main .product__banner__text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  /** Product Banner CSS :: End **/
 }
-
 
 @media (min-width: 320px) and (max-width: 480px) {
   /** Header CSS::Start **/
-  .header .header__top{
+  .header .header__top {
     justify-content: center !important;
   }
-  .header .header__top .header__top__center{
+  .header .header__top .header__top__center {
     display: none;
   }
-  .header .header__top .header__top__right{
+  .header .header__top .header__top__right {
     display: none;
   }
-  .header .header__menu .header__menu__left .header__menu__left__menu{
+  .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
-  .header .header__menu .header__menu__right{
+  .header .header__menu .header__menu__right {
     display: none !important;
   }
-  .openMobileSidebar{
+  .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
-  
+  /** Product Banner CSS :: Start **/
+  #product__banner .product__banner__main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #product__banner .product__banner__main .product__banner__text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  /** Product Banner CSS :: End **/
 }
 /** Responsive Tasarım CSS :: Son **/
