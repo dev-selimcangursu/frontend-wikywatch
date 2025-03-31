@@ -8,6 +8,7 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
 #header {
   width: 100%;
   display: flex;
@@ -15,6 +16,7 @@
   box-sizing: border-box;
   position: relative;
 }
+
 #header .header__top {
   width: 100%;
   display: flex;
@@ -27,20 +29,24 @@
   padding: 0 64px;
   box-sizing: border-box;
 }
+
 #header .header__top .header__top__left {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
+
 #header .header__top .header__top__left a {
   color: whitesmoke;
   text-decoration: none;
   font-size: 13px;
 }
+
 #header .header__top .header__top__center span {
   font-size: 13px;
 }
+
 #header .header__top .header__top__right button {
   background-color: #dd3333;
   color: #ffffff;
@@ -50,6 +56,7 @@
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 #header .header__menu {
   width: 100%;
   display: flex;
@@ -59,20 +66,24 @@
   padding: 0 64px;
   box-sizing: border-box;
 }
+
 #header .header__menu .header__menu__left {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 #header .header__menu .header__menu__left .header__menu__left__logo img {
   width: 80px;
 }
+
 #header .header__menu .header__menu__left__menu ul {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
+
 #header .header__menu .header__menu__left__menu ul li a {
   color: #0000008c;
   font-size: 13px;
@@ -81,24 +92,29 @@
   line-height: 52px;
   font-weight: 600;
 }
+
 #header .header__menu .header__menu__left__menu ul li a:hover {
   color: #000000c5;
 }
+
 #header .header__menu .header__menu__right {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
+
 #header .header__menu .header__menu__right ul {
   text-decoration: none;
   list-style: none;
   display: flex;
   flex-direction: row;
 }
+
 #header .header__menu .header__menu__right ul li {
   position: relative;
 }
+
 #header .header__menu .header__menu__right ul li .header__menu__dropdown {
   position: absolute;
   left: 0px;
@@ -109,10 +125,12 @@
   display: block;
   transition: max-height 1s ease, opacity 1s ease;
 }
+
 #header .header__menu .header__menu__right ul li:hover .header__menu__dropdown {
   max-height: 500px;
   opacity: 1;
 }
+
 #header .header__menu .header__menu__right ul li .header__menu__dropdown ul {
   display: flex;
   flex-direction: column;
@@ -121,6 +139,7 @@
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 #header
   .header__menu
   .header__menu__right
@@ -137,6 +156,7 @@
   line-height: 40px !important;
   font-weight: 600;
 }
+
 #header
   .header__menu
   .header__menu__right
@@ -148,6 +168,7 @@
   a:hover {
   color: #000000c5;
 }
+
 #header .header__menu .header__menu__right ul li a {
   color: #0000008c;
   font-size: 13px;
@@ -156,12 +177,15 @@
   line-height: 52px;
   font-weight: 600;
 }
+
 #header .header__menu .header__menu__right ul li a:hover {
   color: #000000c5;
 }
+
 .openMobileSidebar {
   display: none;
 }
+
 /** Header Top CSS:: Son **/
 /** Mobil Sidebar CSS :: Başlangıç **/
 .mobile__sidebar {
@@ -272,6 +296,7 @@
   font-size: 14px;
   font-weight: 600;
 }
+
 /** Mobil Sidebar CSS :: Son **/
 /** Product Banner CSS :: Başlangıç **/
 #product__banner {
@@ -304,6 +329,7 @@
   height: 100%;
   align-items: start;
 }
+
 #product__banner
   .product__banner__main
   .product__banner__text
@@ -317,6 +343,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 36px;
 }
+
 #product__banner
   .product__banner__main
   .product__banner__text
@@ -353,75 +380,288 @@
   color: #666;
   line-height: 1.6;
 }
+
 #product__banner .product__banner__main .product__banner_image img {
   width: 100%;
   max-width: 400px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 /** Product Banner CSS :: Son **/
+/** Order Product CSS :: Start **/
+#order__products__main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+#order__products__main .order__products {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#order__products__main .order__products .order__product__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+#order__products__main .order__products .order__product__top a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#order__products__main .order__products .order__product__top a:hover {
+  color: #0056b3;
+}
+
+#order__products__main .order__products .order__product__main {
+  display: flex;
+  flex-direction: column;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__top {
+  background-image: url("./assets/images/image1.webp");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  padding: 40px;
+  display: flex;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__top
+  span {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product {
+  width: 48%;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product
+  img {
+  width: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product__details {
+  padding: 10px;
+  font-size: 16px;
+  height: 250px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product__details
+  span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product__details__bottom {
+  border: 1px solid #efede9;
+  padding: 20px 16px;
+  background-color: #efede9;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product__details__bottom
+  p {
+  font-size: 11px;
+  color: black;
+  line-height: 1.6;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product__details
+  button {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#order__products__main
+  .order__products
+  .order__product__main
+  .order__product__main__bottom
+  .order__product__details
+  button:hover {
+  background-color: #555;
+}
+
+/** Order Product CSS :: End **/
 
 /** Responsive Tasarım CSS :: Başlangıç **/
 @media (min-width: 1281px) {
   /** Header CSS::Start **/
   /** Header CSS::End **/
 }
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   /** Header CSS::Start **/
   .header .header__menu .header__menu__right {
     display: none !important;
   }
+
   .openMobileSidebar {
     display: block;
   }
+
   /** Header CSS::End **/
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   /** Header CSS::Start **/
   .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
+
   .header .header__menu .header__menu__right {
     display: none !important;
   }
+
   .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
 }
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /** Header CSS::Start **/
   .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
+
   .header .header__menu .header__menu__right {
     display: none !important;
   }
+
   .openMobileSidebar {
     display: block;
   }
   /** Header CSS::End **/
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
   /** Header CSS::Start **/
   .header .header__top {
     justify-content: center !important;
   }
+
   .header .header__top .header__top__center {
     display: none;
   }
+
   .header .header__top .header__top__right {
     display: none;
   }
+
   .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
+
   .header .header__menu .header__menu__right {
     display: none !important;
   }
+
   .openMobileSidebar {
     display: block;
   }
+
   /** Header CSS::End **/
   /** Product Banner CSS :: Start **/
   #product__banner .product__banner__main {
@@ -429,6 +669,7 @@
     display: flex;
     flex-direction: column;
   }
+
   #product__banner .product__banner__main .product__banner__text {
     width: 100% !important;
     display: flex;
@@ -439,6 +680,81 @@
     text-align: center;
   }
   /** Product Banner CSS :: End **/
+  /** Order Product CSS :: Start **/
+  #order__products__main {
+    padding: 0px !important;
+  }
+
+  #order__products__main .order__products .order__product__top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product {
+    width: 100% !important;
+    flex-direction: column !important;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product
+    img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product
+    .order__product__details {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__top {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product
+    .order__product__details
+    button {
+    padding: 10px 25px;
+  }
+
+  #order__products__main .order__products .order__product__main__top {
+    height: 350px;
+    font-size: 28px;
+    padding: 30px;
+  }
+  /** Order Product CSS :: End **/
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -446,21 +762,27 @@
   .header .header__top {
     justify-content: center !important;
   }
+
   .header .header__top .header__top__center {
     display: none;
   }
+
   .header .header__top .header__top__right {
     display: none;
   }
+
   .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
   }
+
   .header .header__menu .header__menu__right {
     display: none !important;
   }
+
   .openMobileSidebar {
     display: block;
   }
+
   /** Header CSS::End **/
   /** Product Banner CSS :: Start **/
   #product__banner .product__banner__main {
@@ -468,6 +790,7 @@
     display: flex;
     flex-direction: column;
   }
+
   #product__banner .product__banner__main .product__banner__text {
     width: 100% !important;
     display: flex;
@@ -478,5 +801,80 @@
     text-align: center;
   }
   /** Product Banner CSS :: End **/
+  /** Order Product CSS :: Start **/
+  #order__products__main {
+    padding: 0px !important;
+  }
+
+  #order__products__main .order__products .order__product__top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product {
+    width: 100% !important;
+    flex-direction: column !important;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product
+    img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product
+    .order__product__details {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__top {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  #order__products__main
+    .order__products
+    .order__product__main
+    .order__product__main__bottom
+    .order__product
+    .order__product__details
+    button {
+    padding: 10px 25px;
+  }
+
+  #order__products__main .order__products .order__product__main__top {
+    height: 350px;
+    font-size: 28px;
+    padding: 30px;
+  }
+  /** Order Product CSS :: End **/
 }
 /** Responsive Tasarım CSS :: Son **/
