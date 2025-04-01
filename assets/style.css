@@ -346,12 +346,14 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 #product__banner .product__banner__main .product__banner__text .product__banner__description {
   font-size: 14px;
   font-weight: 400;
   color: #666;
   line-height: 1.6;
 }
+
 #product__banner .product__banner__main .product__banner_image img {
   width: 100%;
   max-width: 400px;
@@ -996,7 +998,113 @@ footer {
 
 /** Footer Alanı CSS :: Son **/
 
-
+/** Products Alanı CSS :: Başlangıç **/
+.product__list__wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.product__list__wrapper .product_tabs {
+  display: flex;
+  height: auto;
+  justify-content: start;
+  align-items: center;
+  overflow-x: auto;
+  gap: 10px;
+}
+.product__list__wrapper .product_tabs a {
+  text-decoration: none;
+  padding: 6px 18px;
+  border: none;
+  color: #000000a4;
+  font-weight: 550;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+.product__list__wrapper .product_tabs a:hover {
+  background-color: #007bff;
+  color: whitesmoke;
+  border: none;
+}
+.product__list__wrapper .product_tabs a.active {
+  background-color: #007bff;
+  color: whitesmoke;
+}
+.product__list__wrapper .product__cards {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+}
+.product__card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.product__card__header {
+  background-color: rgb(250, 250, 250);
+  padding: 15px;
+  text-align: center;
+}
+.product__card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product__info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product__name {
+  font-size: 13px;
+  font-weight: inherit;
+  color: #333;
+}
+.product__prices {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.product__old-price {
+  font-size: 13px;
+  color: #888;
+  text-decoration: line-through;
+}
+.product__new-price {
+  font-size: 15px !important;
+  font-weight: bold;
+  color: rgb(179, 0, 0);
+}
+.product__button {
+  padding: 4px 6px !important;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background-color 0.3s;
+}
+.product__button:hover {
+  background-color: #333;
+}
+.product__info small {
+  font-size: 13px;
+  color: #555;
+  text-align: start;
+}
+/** Products Alanı CSS :: Son **/
 
 
 
@@ -1204,6 +1312,33 @@ footer {
   }
 
   /** Footer CSS :: Son **/
+  /** Products CSS :: Başlangıç **/
+  .product_tabs {
+    gap: 15px;
+ }
+
+ .product__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+ }
+
+ .product__card {
+    width: 100%; 
+ }
+
+ .product__name {
+    font-size: 15px;
+ }
+
+ .product__new-price {
+    font-size: 17px;
+ }
+
+ .product__button {
+    padding: 6px 10px;
+ }
+  /** Products CSS :: Son **/
 
 }
 
@@ -1333,6 +1468,40 @@ footer {
   }
 
   /** Footer CSS :: Son **/
+  /** Products CSS :: Başlangıç **/
+  .product_tabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product_tabs a {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .product__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .product__card {
+    width: 100%;
+  }
+
+  .product__name {
+    font-size: 14px;
+  }
+
+  .product__new-price {
+    font-size: 16px;
+  }
+
+  .product__button {
+    padding: 8px 12px;
+  }
+
+  /** Products CSS :: Son **/
 
 }
 

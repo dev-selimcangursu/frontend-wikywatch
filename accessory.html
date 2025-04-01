@@ -128,12 +128,12 @@
     </header>
     <section class="product__list__wrapper">
       <div class="product_tabs">
-         <a href="javascript:void(0);" class="tab-link" data-product="1">Wiky Watch 5 Plus</a>
-         <a href="javascript:void(0);" class="tab-link" data-product="2">Wiky Watch 5S</a>
-         <a href="javascript:void(0);" class="tab-link" data-product="3">Wiky Watch 5E</a>
-         <a href="javascript:void(0);" class="tab-link" data-product="4">Wiky Watch 4S</a>
-         <a href="javascript:void(0);" class="tab-link" data-product="5">Wiky Watch 4 Plus</a>
-         <a href="javascript:void(0);" class="tab-link" data-product="6">Wiky Watch 4G</a>
+         <a href="javascript:void(0);" class="tab-link" data-product="1">Wiky Watch 5 Plus Aksesuar</a>
+         <a href="javascript:void(0);" class="tab-link" data-product="2">Wiky Watch 5S Aksesuar</a>
+         <a href="javascript:void(0);" class="tab-link" data-product="3">Wiky Watch 5E Aksesuar</a>
+         <a href="javascript:void(0);" class="tab-link" data-product="4">Wiky Watch 4S Aksesuar</a>
+         <a href="javascript:void(0);" class="tab-link" data-product="5">Wiky Watch 4 Plus Aksesuar</a>
+         <a href="javascript:void(0);" class="tab-link" data-product="6">Wiky Watch 4G Aksesuar</a>
       </div>
       <div class="product__cards">
          <!-- Ürünler burada dinamik olarak yüklenecek -->
@@ -274,22 +274,21 @@
             // Yeni ürünleri ekle
             selectedProducts.forEach(function(product) {
                 const card = `
-      <div class="product__card">
-         <div class="product__card__header">
-            <img src="${product.image}" alt="${product.name}">
-         </div>
-         <div class="product__info">
-            <small class="product__name">${product.brand}</small>
-            <h3 class="product__name">${product.name}</h3>
-            <div class="product__prices">
+            <div class="product__card">
+              <div class="product__card__header">
+              <img src="${product.image}" alt="${product.name}">
+            </div>
+            <div class="product__info">
+              <small class="product__name">${product.brand}</small>
+              <h3 class="product__name">${product.name}</h3>
+              <div class="product__prices">
                <span class="product__old-price">${product.oldPrice ? `₺${product.oldPrice}` : ''}</span>
                <span class="product__new-price">₺${product.newPrice}</span>
-            </div>
-            <a href="#" class="product__button">İncele</a>
-         </div>
-      </div>
-      `;
-                $('.product__cards').append(card);
+              </div>
+                <a href="#" class="product__button">İncele</a>
+               </div>
+              </div>`;
+             $('.product__cards').append(card);
             });
 
         });
