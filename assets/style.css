@@ -346,14 +346,12 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
 #product__banner .product__banner__main .product__banner__text .product__banner__description {
   font-size: 14px;
   font-weight: 400;
   color: #666;
   line-height: 1.6;
 }
-
 #product__banner .product__banner__main .product__banner_image img {
   width: 100%;
   max-width: 400px;
