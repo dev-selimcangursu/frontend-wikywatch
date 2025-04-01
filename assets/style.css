@@ -940,6 +940,65 @@
 }
 
 /** Destek Alanı CSS :: Son **/
+/** Footer Alanı CSS :: Başlangıç **/
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: start;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.95);
+  ;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer-section ul li a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/** Footer Alanı CSS :: Son **/
+
+
 
 
 
@@ -1001,6 +1060,7 @@
     width: 100%;
     margin-bottom: 15px;
   }
+
 
 }
 
@@ -1111,22 +1171,41 @@
 
   /** WebForm CSS :: End **/
   /** Help Area CSS :: Başlangıç **/
-   .help__area {
-        flex-direction: column;
-    }
+  .help__area {
+    flex-direction: column;
+  }
 
-    .help__area__left {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+  .help__area__left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .help__area__main {
-        max-width: 100%;
-    }
-    .contact__main-wrapper {
-        flex-direction: column;
-    }
+  .help__area__main {
+    max-width: 100%;
+  }
+
+  .contact__main-wrapper {
+    flex-direction: column;
+  }
+
   /** Help Area CSS :: Son **/
+
+  /** Footer CSS :: Başlangıç **/
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  /** Footer CSS :: Son **/
 
 }
 
@@ -1240,6 +1319,22 @@
   }
 
   /** Help Area CSS :: Son **/
+  /** Footer CSS :: Başlangıç **/
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  /** Footer CSS :: Son **/
 
 }
 
