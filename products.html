@@ -124,34 +124,504 @@
         ></a>
       </div>
     </header>
-  
- <section id="product__list">
-    <div class="product__list__area">
-        <div class="product__list__title">
-            <h3>Wiky Watch 5 Plus</h3>
+    <style>
+      /* Wrapper */
+      .product__list__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+      }
+      
+      .product__cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 8px;
+        padding: 20px;
+      }
+      
+      h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #2c3e50;
+      }
+      
+      /* Üst Card Düzeni */
+      .product__top__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap; /* Mobil uyumluluk için */
+      }
+      
+      /* Sol Card */
+      .product__top_card_left,
+      .product__top_card_right {
+        display: flex;
+        flex-direction: row;
+        width: 48%;
+        gap: 10px;
+      }
+      
+      .product__top_card_left img,
+      .product__top_card_right img {
+        width: 100%; /* Resmin tamamını kapsayacak şekilde */
+        height: auto;
+        border-radius: 8px;
+      }
+      
+      /* Üst Card İçeriği */
+      .product__card__body small {
+        font-size: 14px;
+        color: #7f8c8d;
+        text-align: center;
+      }
+      
+      /* Kart Düzeni ve Hover Efekti */
+      .product__top__card__right__card,
+      .product__top__card__left__card {
+        background-color: #fafafa;
+        padding: 15px;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      
+      .product__top__card__right__card:hover,
+      .product__top__card__left__card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Hover Efekti ile Resim Üzerinde Değişim */
+      .product__top__card__right__card img,
+      .product__top__card__left__card img {
+        transition: transform 0.3s ease;
+      }
+      
+   
+      .order__product__cards{
+        display: flex;
+        flex-direction: row;
+        gap:10px
+      }
+      .order__product__cards img{
+        width: 100%;
+      }
+      /* Ekran Boyutlarına Göre Duyarlı Tasarım */
+      @media (max-width: 768px) {
+        .product__top__cards {
+          flex-direction: column;
+        }
+      
+        .product__top_card_left,
+        .product__top_card_right {
+          width: 100%;
+        }
+      }
+      
+      </style>
+      
+      <div class="product__list__wrapper">
+        <div class="product__cards">
+          <h4>Wiky Watch 5 Plus</h4>
+          <div class="product__top__cards">
+            <!-- Sol Card -->
+            <div class="product__top_card_left">
+              <div class="product__card__header">
+                <img src="https://img.freepik.com/free-photo/active-boy-sliding-down_329181-7531.jpg?ga=GA1.1.2021141951.1743531539&semt=ais_hybrid" alt="image">
+              </div>
+            </div>
+            <!-- Sağ Card -->
+            <div class="product__top_card_right">
+              <div class="product__top__card__right__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+              <div class="product__top__card__left__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mor-1-Photoroom.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="order__product__cards">
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="product__list__main">
-            <div class="product__card">
-                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="Wiky Watch 5 Plus" class="product__image">
+        <div class="product__cards">
+          <h4>Wiky Watch 5S</h4>
+          <div class="product__top__cards">
+            <!-- Sol Card -->
+            <div class="product__top_card_left">
+              <div class="product__card__header">
+                <img src="https://img.freepik.com/free-photo/young-kid-girl-make-video-call-her-parents-with-her-pink-smartwatch-near-school_496169-1601.jpg?ga=GA1.1.2021141951.1743531539&semt=ais_hybrid" alt="image">
+              </div>
             </div>
-            <div class="product__card">
-                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="Wiky Watch 5 Plus" class="product__image">
-     
+            <!-- Sağ Card -->
+            <div class="product__top_card_right">
+              <div class="product__top__card__right__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+              <div class="product__top__card__left__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mor-1-Photoroom.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
             </div>
-            <div class="product__card">
-                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="Wiky Watch 5 Plus" class="product__image">
-         
+          </div>
+          <br>
+          <div class="order__product__cards">
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
             </div>
-            <div class="product__card">
-                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="Wiky Watch 5 Plus" class="product__image">
-             
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
             </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    
-
-</section>
-
+        <div class="product__cards">
+          <h4>Wiky Watch 5E</h4>
+          <div class="product__top__cards">
+            <!-- Sol Card -->
+            <div class="product__top_card_left">
+              <div class="product__card__header">
+                <img src="https://img.freepik.com/free-photo/little-boy-speaking-by-blue-smartwatch-drink-tea-near-school_496169-1605.jpg?ga=GA1.1.2021141951.1743531539&semt=ais_hybrid" alt="image">
+              </div>
+            </div>
+            <!-- Sağ Card -->
+            <div class="product__top_card_right">
+              <div class="product__top__card__right__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+              <div class="product__top__card__left__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mor-1-Photoroom.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="order__product__cards">
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__cards">
+          <h4>Wiky Watch 4S</h4>
+          <div class="product__top__cards">
+            <!-- Sol Card -->
+            <div class="product__top_card_left">
+              <div class="product__card__header">
+                <img src="https://img.freepik.com/free-photo/cute-stylish-girl-with-modern-smart-watch-walking-after-school-near-city_496169-908.jpg?ga=GA1.1.2021141951.1743531539&semt=ais_hybrid" alt="image">
+              </div>
+            </div>
+            <!-- Sağ Card -->
+            <div class="product__top_card_right">
+              <div class="product__top__card__right__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+              <div class="product__top__card__left__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mor-1-Photoroom.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="order__product__cards">
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__cards">
+          <h4>Wiky Watch 4 Plus</h4>
+          <div class="product__top__cards">
+            <!-- Sol Card -->
+            <div class="product__top_card_left">
+              <div class="product__card__header">
+                <img src="https://img.freepik.com/free-photo/little-boy-with-blonde-hair-blue-eyes-wearing-red-t-shirt-showing-blue-alarm-clock-while-looking-yellow-wall_141793-31268.jpg?ga=GA1.1.2021141951.1743531539&semt=ais_hybrid" alt="image">
+              </div>
+            </div>
+            <!-- Sağ Card -->
+            <div class="product__top_card_right">
+              <div class="product__top__card__right__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+              <div class="product__top__card__left__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mor-1-Photoroom.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="order__product__cards">
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__cards">
+          <h4>Wiky Watch 4G</h4>
+          <div class="product__top__cards">
+            <!-- Sol Card -->
+            <div class="product__top_card_left">
+              <div class="product__card__header">
+                <img src="https://img.freepik.com/free-photo/french-kid-stylish-beret-caucasian-child-posing-yellow-wall-with-clock_197531-14416.jpg?ga=GA1.1.2021141951.1743531539&semt=ais_hybrid" alt="image">
+              </div>
+            </div>
+            <!-- Sağ Card -->
+            <div class="product__top_card_right">
+              <div class="product__top__card__right__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+              <div class="product__top__card__left__card">
+                <div class="product__card__header">
+                  <img src="./assets/images/wiky-watch-5plus-mor-1-Photoroom.png" alt="image">
+                </div>
+                <div class="product__card__body">
+                  <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="order__product__cards">
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+            <div class="product__top__card__right__card">
+              <div class="product__card__header">
+                <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+              </div>
+              <div class="product__card__body">
+                <small>Wiky Watch 5 Plus Akıllı Çocuk Saati</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <footer>
       <div class="footer-container">
         <div class="footer-section">
