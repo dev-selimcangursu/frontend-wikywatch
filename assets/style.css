@@ -7,6 +7,7 @@
   font-weight: <weight>;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  box-sizing: border-box;
 }
 
 #header {
@@ -140,15 +141,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#header
-  .header__menu
-  .header__menu__right
-  ul
-  li
-  .header__menu__dropdown
-  ul
-  li
-  a {
+#header .header__menu .header__menu__right ul li .header__menu__dropdown ul li a {
   color: #0000008c;
   font-size: 13px;
   text-decoration: none;
@@ -157,15 +150,7 @@
   font-weight: 600;
 }
 
-#header
-  .header__menu
-  .header__menu__right
-  ul
-  li
-  .header__menu__dropdown
-  ul
-  li
-  a:hover {
+#header .header__menu .header__menu__right ul li .header__menu__dropdown ul li a:hover {
   color: #000000c5;
 }
 
@@ -330,10 +315,7 @@
   align-items: start;
 }
 
-#product__banner
-  .product__banner__main
-  .product__banner__text
-  .product__banner__button {
+#product__banner .product__banner__main .product__banner__text .product__banner__button {
   background-color: #000;
   color: whitesmoke;
   padding: 12px;
@@ -344,10 +326,7 @@
   border-radius: 36px;
 }
 
-#product__banner
-  .product__banner__main
-  .product__banner__text
-  .product__banner__subtitle {
+#product__banner .product__banner__main .product__banner__text .product__banner__subtitle {
   font-size: 10px;
   font-weight: 600;
   border: 1px solid #007bff;
@@ -360,10 +339,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#product__banner
-  .product__banner__main
-  .product__banner__text
-  .product__banner__title {
+#product__banner .product__banner__main .product__banner__text .product__banner__title {
   font-size: 36px;
   font-weight: 700;
   color: #333;
@@ -371,10 +347,7 @@
   margin-top: 10px;
 }
 
-#product__banner
-  .product__banner__main
-  .product__banner__text
-  .product__banner__description {
+#product__banner .product__banner__main .product__banner__text .product__banner__description {
   font-size: 14px;
   font-weight: 400;
   color: #666;
@@ -432,20 +405,16 @@
   flex-direction: column;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__top {
-  background-image: url("./assets/images/image1.webp");
+.order__product__main__top {
+  background: #f5f5f5;
   background-position: center;
   background-size: cover;
   height: 500px;
-  color: white;
+  color: black;
   padding: 40px;
   display: flex;
   font-size: 36px;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   justify-content: center;
   align-items: center;
@@ -453,21 +422,14 @@
   text-align: center;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__top
-  span {
+#order__products__main .order__products .order__product__main .order__product__main__top span {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px 25px;
   border-radius: 5px;
   font-size: 30px;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom {
+#order__products__main .order__products .order__product__main .order__product__main__bottom {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -475,11 +437,7 @@
   justify-content: space-between;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product {
   width: 48%;
   background-color: #f7f7f7;
   border-radius: 15px;
@@ -491,31 +449,18 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product:hover {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product
-  img {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product img {
   width: 50%;
   object-fit: cover;
   height: 100%;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product__details {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product__details {
   padding: 10px;
   font-size: 16px;
   height: 250px;
@@ -526,45 +471,26 @@
   width: 50%;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product__details
-  span {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product__details span {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
   color: #333;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product__details__bottom {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product__details__bottom {
   border: 1px solid #efede9;
   padding: 20px 16px;
   background-color: #efede9;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product__details__bottom
-  p {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product__details__bottom p {
   font-size: 11px;
   color: black;
   line-height: 1.6;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product__details
-  button {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product__details button {
   background-color: black;
   color: whitesmoke;
   border-radius: 30px;
@@ -574,24 +500,271 @@
   transition: background-color 0.3s ease;
 }
 
-#order__products__main
-  .order__products
-  .order__product__main
-  .order__product__main__bottom
-  .order__product__details
-  button:hover {
+#order__products__main .order__products .order__product__main .order__product__main__bottom .order__product__details button:hover {
   background-color: #555;
 }
 
 /** Order Product CSS :: End **/
-
-/** Responsive Tasarım CSS :: Başlangıç **/
-@media (min-width: 1281px) {
-  /** Header CSS::Start **/
-  /** Header CSS::End **/
+/** Mobile App İmages CSS :: Start **/
+#mobile__app__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
 }
 
+#mobile__app__wrapper .mobile__app__area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#mobile__app__wrapper .mobile__app__area h2 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#mobile__app__wrapper .splide {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#mobile__app__wrapper .splide .splide__track {
+  overflow: hidden;
+}
+
+#mobile__app__wrapper .splide .splide__track .splide__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile__app__wrapper .splide .splide__track .splide__list .splide__slide img {
+  width: 100%;
+  min-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/** Mobile App İmages CSS :: Son **/
+/** WebForm CSS :: Start **/
+
+#webform__wrapper {
+  width: 100%;
+  background-color: white;
+  padding: 30px 0;
+}
+
+#webform__wrapper .webform__container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#webform__wrapper .webform__container .webform__images {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#webform__wrapper .webform__container .webform__images .webform__image__first img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#webform__wrapper .webform__container .webform__images .webform__image__second {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+#webform__wrapper .webform__container .webform__images .webform__image__second img {
+  width: 48%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#webform__wrapper .webform__container .webform__images .webform__image__second img:hover {
+  transform: scale(1.05);
+}
+
+#webform__wrapper .webform__container .webform__main {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#webform__wrapper .webform__container .webform__main .webform__main__top h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#webform__wrapper .webform__container .webform__main .webform__main__top p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.webform__main__bottom {
+  box-sizing: border-box;
+}
+
+#webform__wrapper .webform__container .webform__main .webform__main__bottom input,
+#webform__wrapper .webform__container .webform__main .webform__main__bottom select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+#webform__wrapper .webform__container .webform__main .webform__main__bottom .webform__main__bottom input:focus,
+#webform__wrapper .webform__container .webform__main .webform__main__bottom .webform__main__bottom select:focus {
+  border-color: #333;
+  outline: none;
+}
+
+#webform__wrapper .webform__container .webform__main .webform__main__bottom button {
+  width: 100%;
+  padding: 11px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#webform__wrapper .webform__container .webform__main .webform__main__bottom button:hover {
+  background-color: #333;
+}
+
+
+@media (max-width: 1200px) {
+  #webform__wrapper .webform__container {
+    flex-direction: column;
+  }
+
+  #webform__wrapper .webform__container .webform__images {
+    width: 100%;
+  }
+
+  #webform__wrapper .webform__container .webform__main {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #webform__wrapper .webform__container .webform__images .webform__image__second {
+    flex-direction: column;
+  }
+
+  #webform__wrapper .webform__container .webform__images .webform__image__second img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #webform__wrapper .webform__container .webform__images .webform__image__first img {
+    width: 100%;
+  }
+
+  #webform__wrapper .webform__container .webform__images .webform__image__second img {
+    width: 100%;
+  }
+}
+/** WebForm CSS :: Son **/
+/** Bilgi Bankası CSS :: Başlangıç **/
+#blogs__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+#blogs__wrapper .blogs__area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#blogs__wrapper .blogs__area h2 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+#blogs__wrapper .splide {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#blogs__wrapper .splide .splide__track {
+  overflow: hidden;
+}
+
+#blogs__wrapper .splide .splide__track .splide__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#blogs__wrapper .splide .splide__track .splide__list .splide__slide img {
+  width: 100%;
+  min-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/** Bilgi Bankası CSS :: Son **/
+
+
+
+
+
+
+
+
+
+
+/** Responsive Tasarım CSS :: Başlangıç **/
 @media (min-width: 1025px) and (max-width: 1280px) {
+
   /** Header CSS::Start **/
   .header .header__menu .header__menu__right {
     display: none !important;
@@ -605,6 +778,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
   /** Header CSS::Start **/
   .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
@@ -617,10 +791,13 @@
   .openMobileSidebar {
     display: block;
   }
+
   /** Header CSS::End **/
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
   /** Header CSS::Start **/
   .header .header__menu .header__menu__left .header__menu__left__menu {
     display: none;
@@ -633,10 +810,21 @@
   .openMobileSidebar {
     display: block;
   }
+
   /** Header CSS::End **/
+  #webform__wrapper .webform__container .webform__images .webform__image__second {
+    flex-direction: column !important;
+  }
+
+  #webform__wrapper .webform__container .webform__images .webform__image__second img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+
   /** Header CSS::Start **/
   .header .header__top {
     justify-content: center !important;
@@ -679,6 +867,7 @@
     align-items: center;
     text-align: center;
   }
+
   /** Product Banner CSS :: End **/
   /** Order Product CSS :: Start **/
   #order__products__main {
@@ -690,19 +879,12 @@
     text-align: center;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom {
     flex-direction: column;
     align-items: center;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product {
     width: 100% !important;
     flex-direction: column !important;
     margin-bottom: 30px;
@@ -710,42 +892,23 @@
     box-sizing: border-box;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product
-    img {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product img {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product
-    .order__product__details {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product .order__product__details {
     width: 100% !important;
     text-align: center;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__top {
+  #order__products__main .order__products .order__product__main .order__product__main__top {
     font-size: 30px;
     padding: 20px;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product
-    .order__product__details
-    button {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product .order__product__details button {
     padding: 10px 25px;
   }
 
@@ -754,10 +917,23 @@
     font-size: 28px;
     padding: 30px;
   }
+
   /** Order Product CSS :: End **/
+  /** WebForm CSS :: Start **/
+  #webform__wrapper .webform__container .webform__images .webform__image__first img {
+    width: 100%;
+  }
+
+  #webform__wrapper .webform__container .webform__images .webform__image__second img {
+    width: 100%;
+  }
+
+  /** WebForm CSS :: End **/
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+
   /** Header CSS::Start **/
   .header .header__top {
     justify-content: center !important;
@@ -800,6 +976,7 @@
     align-items: center;
     text-align: center;
   }
+
   /** Product Banner CSS :: End **/
   /** Order Product CSS :: Start **/
   #order__products__main {
@@ -811,19 +988,12 @@
     text-align: center;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom {
     flex-direction: column;
     align-items: center;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product {
     width: 100% !important;
     flex-direction: column !important;
     margin-bottom: 30px;
@@ -831,42 +1001,23 @@
     box-sizing: border-box;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product
-    img {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product img {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product
-    .order__product__details {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product .order__product__details {
     width: 100% !important;
     text-align: center;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__top {
+  #order__products__main .order__products .order__product__main .order__product__main__top {
     font-size: 30px;
     padding: 20px;
   }
 
-  #order__products__main
-    .order__products
-    .order__product__main
-    .order__product__main__bottom
-    .order__product
-    .order__product__details
-    button {
+  #order__products__main .order__products .order__product__main .order__product__main__bottom .order__product .order__product__details button {
     padding: 10px 25px;
   }
 
@@ -875,6 +1026,9 @@
     font-size: 28px;
     padding: 30px;
   }
+
   /** Order Product CSS :: End **/
+
 }
+
 /** Responsive Tasarım CSS :: Son **/
