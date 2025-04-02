@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Selimcan Gürsu | Full Stack Web Developer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Wiky Watch | Türkiyenin İlk Akıllı Çocuk Telefonu</title>
+  </head>
+  <body>
+    <div class="mobile__sidebar">
+      <div class="mobile__sidebar__top">
+        <img src="./assets/images/wiky-logo3.svg" alt="" />
+        <a class="closeMobileSidebar"><i class="bi bi-x-circle"></i></a>
+      </div>
+      <div class="mobile__sidebar__center">
+        <ul>
+          <li><a href="">Anasayfa</a></li>
+          <li><a href="">Akıllı Çocuk Saatleri</a></li>
+          <li><a href="">Aksesuar Mağazası</a></li>
+        </ul>
+      </div>
+      <div class="mobile__sidebar__bottom">
+        <ul>
+          <li>
+            <div class="mobile__sidebar__dropdown">
+              <a href="#">Teknik Servis</a>
+              <div class="mobile__sidebar__dropdown__menu">
+                <ul>
+                  <li><a href="#">Teknik Servis Kayıt Formu</a></li>
+                  <li><a href="#">Teknik Servis Durum Sorgulama</a></li>
+                  <li><a href="#">Wiky Watch Sıfırlama Formu</a></li>
+                  <li><a href="#">Servis Ödeme Sorgula</a></li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="technicalDropdownOpen"
+              ><i class="bi bi-plus-lg"></i
+            ></a>
+          </li>
+          <li><a href="">Bilgi Bankası</a></li>
+          <li><a href="">Hakkımızda</a></li>
+        </ul>
+      </div>
+    </div>
+    <header id="header" class="header">
+      <div class="header__top">
+        <div class="header__top__left">
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-youtube"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+        </div>
+        <div class="header__top__center">
+          <span>Türkiyenin İlk Akıllı Çocuk Saat Firması !</span>
+        </div>
+        <div class="header__top__right">
+          <button>Hemen Bilgi Al</button>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="header__menu__left">
+          <div class="header__menu__left__logo">
+            <img src="./assets/images/wiky-logo3.svg" alt="logo" />
+          </div>
+          <div class="header__menu__left__menu">
+            <ul>
+              <li><a href="">Anasayfa</a></li>
+              <li>
+                <a href="">Akılı Çocuk Saatleri</a>
+              </li>
+              <li><a href="">Aksesuar Mağazası</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__menu__right">
+          <ul>
+            <li>
+              <a href="">Teknik Destek</a>
+              <div class="header__menu__dropdown">
+                <ul>
+                  <li>
+                    <a href="">Teknik Servis Kayıt Formu</a>
+                  </li>
+                  <li>
+                    <a href="">Teknik Servis Durum Sorgulama</a>
+                  </li>
+                  <li>
+                    <a href="">Wiky Watch Sıfırlama Formu </a>
+                  </li>
+                  <li>
+                    <a href="">Servis Ödeme Sorgula</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Bilgi Bankası</a></li>
+            <li><a href="">Hakkımızda</a></li>
+          </ul>
+        </div>
+        <a
+          class="openMobileSidebar"
+          style="font-size: 36px !important; color: #333"
+          href=""
+          ><i class="bi bi-list"></i
+        ></a>
+      </div>
+    </header>
+    <style>
+
+
+/* Mobil uyumlu */
+@media (max-width: 768px) {
+    #product__detail__wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product__left__area, .product__right__area {
+        width: 100%;
+    }
+
+    .product__left__image {
+        margin-bottom: 10px;
+    }
+
+    .product__right__price__area {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+    .product__featured__list ul {
+        margin-left: 20px;
+    }
+
+    .product__colors {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .product__color {
+        margin-right: 15px;
+    }
+}
+
+    </style>
+    <section id="product__detail__wrapper">
+        <div class="product__left__area">
+           <div class="product__left__image">
+            <img src="./assets/images/wiky-watch-5plus-mavi.png" alt="image">
+            <a href="">Ürün Görsellerini İncele</a>
+           </div>
+           <div class="product__left__image__bottom">
+               <div class="product__left__boxes">
+                  <div class="product__left__box">
+                    <i class="bi bi-boxes"></i>
+                     <small>Ücretsiz Teslimat</small>
+                  </div>
+                  <div class="product__left__box">
+                    <i class="bi bi-box-seam"></i>
+                    <small>Ücretsiz Kolay İade</small>
+                 </div>
+               </div>
+           </div>
+        </div>
+        <div class="product__right__area">
+            <h3>Wiky Watch Akıllı Çocuk Saati 5 Plus Mavi</h3>
+            <div class="stars__area">
+                <i style="color:rgba(238, 238, 10, 0.819)" class="bi bi-star-fill"></i>
+                <i style="color:rgba(238, 238, 10, 0.819)" class="bi bi-star-fill"></i>
+                <i style="color:rgba(238, 238, 10, 0.819)" class="bi bi-star-fill"></i>
+                <i style="color:rgba(238, 238, 10, 0.819)" class="bi bi-star-fill"></i>
+                <i style="color:rgba(238, 238, 10, 0.819)" class="bi bi-star-fill"></i>
+            </div>
+            <div class="product__right__price__area">
+                <p class="old__price">7600TL</p>
+                <p class="new__price">5600TL</p>
+            </div>
+            <p class="product__description">
+                Wiky Watch 5 Plus Akıllı Çocuk Saati , Yüksek Çözünürlüklü Amoled Ekran , Sağlık Takibi , Sesli ve Görüntülü Görüşme , Uzun Pil Ömrü ve Güçlü Donanım Özellikleriyle
+                ,Çocuklarınız için Yeni Nesil En İyi Akıllı Çocuk Saatidir.Pratik Kullanım Özelliklerinin Yanı Sıra Nabız, Oksijen, Ateş Ölçme , Elektronik Çit,
+                Kayıp Yönetimi , Sınıf Modu ve Daha Fazlasıyla Güvenli Kullanım Sağlar.
+            </p>
+            <div class="product__colors">
+                <div class="product__color">
+                    <img src="https://cdn1.wikywatch.com.tr/uploads/2024/06/wiky-watch-5plus-mavi-1.jpg" alt="image">
+                     <small>Mavi</small>
+                </div>
+                <div class="product__color">
+                    <img src="https://cdn1.wikywatch.com.tr/uploads/2024/09/wiky-watch-5plus-pembe-1.jpg" alt="image">
+                     <small>Pembe</small>
+                </div>
+                <div class="product__color">
+                    <img src="https://cdn1.wikywatch.com.tr/uploads/2025/03/wiky-watch-5plus-siyah-1.jpg" alt="image">
+                     <small>Siyah</small>
+                </div>
+                <div class="product__color">
+                    <img src="https://cdn1.wikywatch.com.tr/uploads/2025/03/wiky-watch-5plus-mor-1.jpg" alt="image">
+                     <small>Mor</small>
+                </div>
+            </div>
+            <div class="product__featured__list">
+                <ul>
+                    <li>
+                        <a href="">Nabız Oksijen ve Ateş Ölçer</a>
+                    </li>
+                    <li>
+                        <a href="">Amoled Ekran ve Kompakt Tasarım</a>
+                    </li>
+                    <li>
+                        <a href="">Elektronik Çit ve Sınıf Modu</a>
+                    </li>
+
+                    <li>
+                        <a href="">Görüntülü Görüşme</a>
+                    </li>
+                    <li>
+                        <a href="">Spreadtrum 8541E İşlemci ve Wiky OS İşletim Sistemi</a>
+                    </li>
+                    <li>
+                        <a href="">Uzaktan Görüntü Alma ve Kayıp Yönetimi</a>
+                    </li>
+                    <li>
+                        <a href="">Pil Performansı ve Şarj Süresi</a>
+                    </li>
+                    <li>
+                        <a href="">IP67 Su ve Toz Dayanıklılığı</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+             <a href="">Ürün Özellikleri Tablosunu İncele !</a>
+        </div>
+    </section>
+
+    <style>
+.product__featured__wrapper {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+.featured__area {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.featured__area__left {
+    flex: 1;
+    position: relative;
+}
+.featured__area__left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+.featured__area__right {
+    flex: 1.5;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured__area__right h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+.featured__area__right p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.featured__area__right h3 {
+    font-family: 'Arial', sans-serif;
+}
+.featured__area__right p {
+    font-family: 'Helvetica', sans-serif;
+    text-align: justify;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .featured__area {
+        flex-direction: column;
+    }
+    
+    .featured__area__left,
+    .featured__area__right {
+        flex: 1;
+        width: 100%;
+    }
+
+    .featured__area__right {
+        padding: 20px;
+    }
+
+    .featured__area__right h3 {
+        font-size: 26px;
+    }
+
+    .featured__area__right p {
+        font-size: 14px;
+    }
+}
+
+    </style>
+    <section class="product__featured__wrapper">
+        <div class="featured__area">
+            <div class="featured__area__left">
+                <img src="https://cdn3.wikywatch.com.tr/uploads/2024/12/5plus-mavi-saglik.jpg.webp" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+            <div class="featured__area__right">
+                <h3>Nabız Oksijen ve Ateş Ölçer</h3>
+                <p>Gelişmiş sağlık takibi özellikleri arasında nabız ölçer, oksijen ölçer ve ateş ölçer bulunur. Bu özellikler, çocuklarınızın sağlık durumlarını anlık olarak izlemeyi sağlar ve olası sorunlara karşı hızlı bir şekilde müdahale edilmesine yardımcı olur.</p>
+            </div>
+        </div>
+        <div class="featured__area">
+            <div class="featured__area__right">
+                <h3>Amoled Ekran ve Kompakt Tasarım</h3>
+                <p>Wiky Watch 5 Plus, 1.78 inç büyüklüğündeki AMOLED ekranıyla canlı renkler ve net görüntüler sunar. 368 x 448 çözünürlüğü ile ekran kalitesi oldukça yüksektir. Ayrıca, 52 gram ağırlığı ile hafif ve rahat bir kullanım sağlar.</p>            </div>
+            <div class="featured__area__left">
+                <img src="https://cdn1.wikywatch.com.tr/uploads/2024/12/5plus-mavi-gorillaglass.jpg.webp" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+        </div>
+        <div class="featured__area">
+            <div class="featured__area__left">
+                <img src="https://cdn1.wikywatch.com.tr/uploads/2024/12/5plus-mavi-sinifmodu.jpg.webp" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+            <div class="featured__area__right">
+                <h3>Elektronik Çit ve Sınıf Modu</h3>
+                <p>Wiky Watch 5 Plus, elektronik çit özelliği ile belirli bölgelerin dışına çıkıldığında uyarı gönderir. Ayrıca, sınıf modu sayesinde çocuklar okuldayken dikkatlerini dağıtacak bildirimleri almazlar; bu da eğitim sürecini kesintisiz kılar.</p>
+              </div>
+        </div>
+        <div class="featured__area">
+            <div class="featured__area__right">
+                <h3>Görüntülü Görüşme</h3>
+                <p>Wiky Watch 5 Plus, hem sesli hem de görüntülü görüşme yapabilme özelliği ile öne çıkıyor. Bu özellik, ebeveynlerin çocuklarıyla yüz yüze iletişim kurabilmesini sağlar. Bu da aile içi etkinlikleri veya arkadaşlarla iletişimi daha etkileşimli hale getirir.</p>            </div>
+            <div class="featured__area__left">
+                <img src="https://img.freepik.com/free-photo/image-icon-front-side-white-background_187299-40166.jpg?ga=GA1.1.750660428.1742764870&semt=ais_hybrid" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+        </div>
+        <div class="featured__area">
+            <div class="featured__area__left">
+              <img src="https://img.freepik.com/free-photo/image-icon-front-side-white-background_187299-40166.jpg?ga=GA1.1.750660428.1742764870&semt=ais_hybrid" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+            <div class="featured__area__right">
+                <h3>Spreadtrum 8541E İşlemci ve Wiky OS İletişim Sistemi</h3>
+                <p>"Spreadtrum 8541E Quad-Core 1.4 GHz işlemci ve Wiky OS işletim sistemi ile saatin performansı oldukça yüksek ve kullanıcı dostudur. Bu özelliklerin sorunsuz şekilde çalışmasını sağlar."</p>
+            </div>
+        </div>
+        <div class="featured__area">
+           
+            <div class="featured__area__right">
+                <h3>Nabız Oksijen ve Ateş Ölçer</h3>
+                <p>Gelişmiş Sağlık Takibi Özellikleri Arasında Nabız Ölçer, Oksijen Ölçer ve Ateş Ölçer Bulunur. Bu Özellikler Çocuklarınızın Sağlık Durumlarını
+                    Anlık Olarak İzlemeyi Sağlar ve Olası Sorunlarına Karşı Hızlı Bir Şekilde Müdahale Edilmesine Yardımcı Olur.</p>
+            </div>
+            <div class="featured__area__left">
+                <img src="https://cdn3.wikywatch.com.tr/uploads/2024/12/5plus-mavi-saglik.jpg.webp" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+        </div>
+        <div class="featured__area">
+            <div class="featured__area__left">
+                <img src="https://cdn3.wikywatch.com.tr/uploads/2024/12/5plus-mavi-saglik.jpg.webp" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+            <div class="featured__area__right">
+                <h3>Nabız Oksijen ve Ateş Ölçer</h3>
+                <p>Gelişmiş Sağlık Takibi Özellikleri Arasında Nabız Ölçer, Oksijen Ölçer ve Ateş Ölçer Bulunur. Bu Özellikler Çocuklarınızın Sağlık Durumlarını
+                    Anlık Olarak İzlemeyi Sağlar ve Olası Sorunlarına Karşı Hızlı Bir Şekilde Müdahale Edilmesine Yardımcı Olur.</p>
+            </div>
+        </div>
+        <div class="featured__area">
+           
+            <div class="featured__area__right">
+                <h3>Nabız Oksijen ve Ateş Ölçer</h3>
+                <p>Gelişmiş Sağlık Takibi Özellikleri Arasında Nabız Ölçer, Oksijen Ölçer ve Ateş Ölçer Bulunur. Bu Özellikler Çocuklarınızın Sağlık Durumlarını
+                    Anlık Olarak İzlemeyi Sağlar ve Olası Sorunlarına Karşı Hızlı Bir Şekilde Müdahale Edilmesine Yardımcı Olur.</p>
+            </div>
+            <div class="featured__area__left">
+                <img src="https://cdn3.wikywatch.com.tr/uploads/2024/12/5plus-mavi-saglik.jpg.webp" alt="Nabız Oksijen ve Ateş Ölçer" />
+            </div>
+        </div>
+    </section>
+    
+
+ <style>
+.cart-summary {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 2px solid #ddd;
+  padding: 5px 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.cart__summary__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+}
+.cart__summary__left h5 {
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+.cart__summary__left small {
+  color: #777;
+  font-size: 12px;
+}
+.cart__summary__left i {
+  font-size: 32px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart__summary__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+.cart__summary__price__box p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+.cart__summary__right a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  margin-top: 5px;
+}
+.cart__summary__right a:hover {
+  text-decoration: underline;
+}
+.cart__summary__right button {
+  margin-top: 15px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cart__summary__right button:hover {
+  background-color: #333;
+}
+
+.cart__summary__right button:focus {
+  outline: none;
+}
+.cart__summary__left i {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.cart__summary__center{
+    text-align: center;
+}
+.cart__summary__center__social__media{
+    text-align: center;
+    margin-top: 10px;
+}
+.cart__summary__center__social__media a{
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 17px;
+    text-decoration: none;
+    
+}
+.cart__summary__center #buy__help{
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+ </style>
+    <div class="cart-summary">
+        <div class="cart__summary__left">
+            <i class="bi bi-truck"></i>
+            <h5>Gönderim</h5>
+            <small>1-3 İş Günü</small>
+            <small>Ücretsiz Gönderim</small>
+        </div>
+        <div class="cart__summary__center">
+          <a id="buy__help" href="">Satın Alma Konusunda Sorularınız mı Var ?</a>
+          <div class="cart__summary__center__social__media">
+            <h5>Bizi Sosyal Medyadan Takip Edebilirsiniz.</h5>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+         
+        </div>
+        <div class="cart__summary__right">
+            <div class="cart__summary__price__box">
+                <p>6539 TL</p>
+                <a href="">2,300,00 TL x 3 Aya Kadar Taksit</a>
+            </div>
+            <button>Sepete Ekle</button>
+        </div>
+    </div>
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Firma Bilgileri</h4>
+          <ul>
+            <li>
+              Adres: Kısıklı Caddesi Aköz İş Merkezi B Blok No:14/2 Daire:1
+              İstanbul/Üsküdar - Altunizade
+            </li>
+            <li>Telefon: (0216) 345 9360</li>
+            <li>Email: info@wikywatch.com</li>
+            <li>Çalışma Saatleri: 09:00 - 18:00</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Wiky Modelleri</h4>
+          <ul>
+            <li><a href="#">Wiky Watch 5 Plus</a></li>
+            <li><a href="#">Wiky Watch 5E</a></li>
+            <li><a href="#">Wiky Watch 4S</a></li>
+            <li><a href="#">Wiky Tag</a></li>
+            <li><a href="#">Wiky Watch 4G</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Destek</h4>
+          <ul>
+            <li><a href="#">Sık Sorulan Sorular</a></li>
+            <li><a href="#">Sipariş Durum Sorgulama</a></li>
+            <li><a href="#">Teknik Servis Durum Sorgulama</a></li>
+            <li><a href="#">Teknik Servis Kayıt Formu</a></li>
+            <li><a href="#">Teknik Servis Ödeme Sorgulama</a></li>
+            <li><a href="#">Wiky Saat Sıfırlama Formu</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Hakkımızda</h4>
+          <ul>
+            <li><a href="#">Hakkımızda </a></li>
+            <li><a href="">İletişim</a></li>
+            <li><a href="#">Gizlilik Sözleşmesi</a></li>
+            <li><a href="#">Gizlilik Politikası</a></li>
+            <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
+            <li><a href="#">İade Politikası</a></li>
+            <li><a href="#">İnsan Kaynakları</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Wiky Watch. Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function() {
+        // Sidebar'ı açma
+        $(".openMobileSidebar").on("click", function(e) {
+            e.preventDefault();
+            $(".mobile__sidebar").css("left", "0");
+        });
+        // Sidebar'ı kapama
+        $(".closeMobileSidebar").on("click", function() {
+            $(".mobile__sidebar").css("left", "-100%");
+        });
+        // Teknik dropdown menüsünü açma ve kapama işlevi
+        $(".technicalDropdownOpen").on("click", function(e) {
+            e.preventDefault();
+            var $dropdownMenu = $(this)
+                .prev(".mobile__sidebar__dropdown")
+                .find(".mobile__sidebar__dropdown__menu");
+            if ($dropdownMenu.hasClass("open")) {
+                $dropdownMenu.removeClass("open");
+            } else {
+                $dropdownMenu.addClass("open");
+            }
+        });
+    });
+  </script>
+</html>
